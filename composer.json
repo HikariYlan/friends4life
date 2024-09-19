@@ -1,0 +1,28 @@
+{
+    "name": "hikari/friends4life",
+    "description": "Web mini-game for playing a copyright-free version of Tomodachi Life",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hikari",
+            "email": "thedoctor52600@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "start:windows": [
+            "Composer\\Config::disableProcessTimeout",
+            "bin/run-server.bat"
+        ],
+        "start:linux": [
+            "Composer\\Config::disableProcessTimeout",
+            "bin/run-server.sh"
+        ]
+    }
+}
